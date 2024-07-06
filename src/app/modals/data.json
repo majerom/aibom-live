@@ -1,0 +1,153 @@
+{
+    "projects": [
+      {
+        "name": "Llama",
+        "version": "1.0",
+        "description": "A hypothetical AI application",
+        "license": "Apache 2.0",
+        "components": [
+          {
+            "name": "TensorFlow",
+            "version": "2.7.0",
+            "type": "Framework",
+            "license": "Apache 2.0",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2022-1234",
+                "description": "Buffer overflow vulnerability",
+                "severity": "High"
+              },
+              {
+                "id": "CVE-2022-5678",
+                "description": "Information disclosure vulnerability",
+                "severity": "Medium"
+              }
+            ]
+          },
+          {
+            "name": "NumPy",
+            "version": "1.22.0",
+            "type": "Library",
+            "license": "BSD-3-Clause",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2022-9876",
+                "description": "SQL injection vulnerability",
+                "severity": "High"
+              }
+            ]
+          },
+          {
+            "name": "SciPy",
+            "version": "1.7.0",
+            "type": "Library",
+            "license": "BSD-3-Clause",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2022-5432",
+                "description": "Cross-site scripting (XSS) vulnerability",
+                "severity": "Medium"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phoenix",
+        "version": "2.0",
+        "description": "An advanced machine learning project",
+        "license": "MIT",
+        "components": [
+          {
+            "name": "Keras",
+            "version": "2.8.0",
+            "type": "Framework",
+            "license": "MIT",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2023-1111",
+                "description": "Authentication bypass vulnerability",
+                "severity": "High"
+              }
+            ]
+          },
+          {
+            "name": "Scikit-learn",
+            "version": "0.25.0",
+            "type": "Library",
+            "license": "BSD-3-Clause",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2023-2222",
+                "description": "Remote code execution vulnerability",
+                "severity": "Critical"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aurora",
+        "version": "3.5",
+        "description": "An AI-based data analytics platform",
+        "license": "GPL-3.0",
+        "components": [
+          {
+            "name": "Pandas",
+            "version": "1.3.3",
+            "type": "Library",
+            "license": "BSD-3-Clause",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2023-3333",
+                "description": "Access control bypass vulnerability",
+                "severity": "High"
+              }
+            ]
+          },
+          {
+            "name": "Matplotlib",
+            "version": "3.5.1",
+            "type": "Library",
+            "license": "PSF-2.0",
+            "vulnerabilities": []
+          }
+        ]
+      },
+      {
+        "name": "Jupiter",
+        "version": "1.2",
+        "description": "A versatile AI platform for research",
+        "license": "MIT",
+        "components": [
+          {
+            "name": "PyTorch",
+            "version": "1.12.0",
+            "type": "Framework",
+            "license": "BSD-3-Clause",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2024-1234",
+                "description": "Data leakage vulnerability",
+                "severity": "Medium"
+              }
+            ]
+          },
+          {
+            "name": "NLTK",
+            "version": "3.6.0",
+            "type": "Library",
+            "license": "Apache 2.0",
+            "vulnerabilities": [
+              {
+                "id": "CVE-2024-5678",
+                "description": "Sensitive data exposure vulnerability",
+                "severity": "High"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

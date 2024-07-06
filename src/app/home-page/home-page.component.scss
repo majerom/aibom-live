@@ -1,0 +1,148 @@
+
+mat-toolbar{
+    padding: 0 1.5rem;
+    position: fixed;
+    z-index: 10001;
+    padding: 15px 25px;
+    font-size: 25px;
+    background: black;
+    color: white;
+    display: flex;
+
+    a.logout{
+        margin-left: auto;
+        color: #ffffff;
+        font-size: 15px;
+    }
+}
+
+section.search-section{
+    padding: 8rem 1.5rem 3rem 1.5rem;
+    border-bottom: 1px #DEDED9 solid;
+   
+    .search-section-wrapper{ 
+        text-align: center;
+
+        input.search{
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            width: 60%;
+            border-radius: 0.3rem;
+            
+        }
+
+        button.search-btn{
+           font-size: 1rem;
+           letter-spacing: 1px;
+           padding: 1.4rem 2.5rem;
+           margin-left: 2rem;
+           background: #091581;
+           color: #ffffff;
+        }
+    }
+}
+
+section.results-section{
+    padding: 3rem 1.5rem;
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    ul.inline-details{
+        display: flex;
+        margin: auto;
+        padding-left: 0;
+        justify-content: center;
+
+        &.left-list{
+            justify-content: left;
+        }
+
+        li{
+            list-style: none;
+            margin-right: 1.5rem;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .components-wrapper{
+        width: 75%;
+        margin: auto;
+
+        .componenet-header{
+            padding: 0.5rem 1rem;
+            background-color: #eeeeee;
+        }
+
+        .componenet-body{
+            padding: 1rem 2rem 2rem 2rem;
+
+            h3{
+                font-size: 21px;
+                margin-bottom: 20px;
+                margin-top: 50px;
+            }
+
+            span{
+                opacity: 0.5;
+            }
+
+            ::ng-deep  table{
+                width: 100%;
+                margin-top: 1rem;
+                background-color: transparent;
+                
+                
+                thead{
+                    
+                    tr{
+                        th{
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+                tr{
+                    text-align: left;
+                    height: auto;
+                }
+            
+                th, td {
+                    padding: 0.5rem 1rem;
+            
+                    &.w-180{
+                        width: 180px;
+                    }
+
+                    &.w-220{
+                        width: 220px;
+                    }
+                } 
+            }
+
+            table, th, td {
+                border: 1px #dfdfdf solid;
+                border-collapse: collapse;
+                
+            }
+        }
+
+        
+    }
+
+   
+}
+
+
