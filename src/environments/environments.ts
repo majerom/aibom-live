@@ -1,13 +1,30 @@
 export const environment = {
     production: false,
     firebase: {
-        apiKey: "AIzaSyAI_h9sThFTH2Nt3fifct3PYpljvqgS-Mk",
-        authDomain: "aibom-7a070.firebaseapp.com",
-        databaseURL: "https://aibom-7a070-default-rtdb.firebaseio.com",
-        projectId: "aibom-7a070",
-        storageBucket: "aibom-7a070.appspot.com",
-        messagingSenderId: "441703567646",
-        appId: "1:441703567646:web:91adc491e6fd12355c390f",
-        measurementId: "G-F5F03CNW5Q"
-        }
+        apiKey: "AIzaSyCbox9TTEw2q3-T3fT14a6kpkTRp8UofLw",
+        authDomain: "aibom-v1.firebaseapp.com",
+        projectId: "aibom-v1",
+        storageBucket: "aibom-v1.appspot.com",
+        messagingSenderId: "153674585808",
+        appId: "1:153674585808:web:f2ca7ea6cf0d82852f70d5"
+    }
   };
+
+
+//   // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+// // Your web app's Firebase configuration
+// const firebaseConfig = {
+//  apiKey: "AIzaSyCbox9TTEw2q3-T3fT14a6kpkTRp8UofLw",
+//  authDomain: "aibom-v1.firebaseapp.com",
+//  projectId: "aibom-v1",
+//  storageBucket: "aibom-v1.appspot.com",
+//  messagingSenderId: "153674585808",
+//  appId: "1:153674585808:web:f2ca7ea6cf0d82852f70d5"
+// };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
