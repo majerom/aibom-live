@@ -61,7 +61,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
       this.vulnarabilities = data.vulnerabilities; 
       this.dataSource = new MatTableDataSource<any>(this.vulnarabilities)
       this.dataSource.paginator = this.paginator;
-   
+
     })
   }
 
@@ -70,4 +70,24 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     this.router.navigateByUrl('/login');
   }
   
+
+  getBaseScore(element: any): string{
+     if(element.cve?.metrics?.cvssMetricV31){
+      return element.cve?.metrics?.cvssMetricV31[0]?.cvssData?.baseScore;
+     }else if(element.cve?.metrics?.cvssMetricV2){
+      return element.cve?.metrics?.cvssMetricV2[0]?.cvssData?.baseScore;
+     }else{
+      return 'N/A'
+     }
+  }
+
+  getBaseSeverity(element: any): string{
+    if(element.cve?.metrics?.cvssMetricV31){
+     return element.cve?.metrics?.cvssMetricV31[0]?.cvssData?.baseSeverity;
+    }else if(element.cve?.metrics?.cvssMetricV2){
+     return element.cve?.metrics?.cvssMetricV2[0]?.baseSeverity;
+    }else{
+     return 'N/A'
+    }
+ }
 }

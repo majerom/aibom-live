@@ -70,11 +70,18 @@
         
             <ng-container matColumnDef="vulnStatus">
               <th mat-header-cell *matHeaderCellDef> Severity </th>
-              <td mat-cell *matCellDef="let element"> {{element.cve.metrics.cvssMetricV31[0].cvssData.baseSeverity}} </td>
+              <td mat-cell *matCellDef="let element"> 
+                {{ getBaseSeverity(element) }}
+              </td>
+ 
             </ng-container>
             <ng-container matColumnDef="score">
               <th mat-header-cell *matHeaderCellDef> Score </th>
-              <td mat-cell *matCellDef="let element"> {{element.cve.metrics.cvssMetricV31[0].cvssData.baseScore}} </td>
+              <!-- <td mat-cell *matCellDef="let element"> {{element.cve?.metrics?.cvssMetricV31[0]?.cvssData?.baseSeverity ?? "N/A"}} </td> -->
+                <td mat-cell *matCellDef="let element">
+                  {{ getBaseScore(element) }}
+                </td>
+
             </ng-container>
          
          
